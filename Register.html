@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/RegisterFormCss.css" type="text/css">
+</head>
+<body>
+    <div name="registration" class="registerDiv">
+        <form name="registerForm" method="post" action="">
+            <fieldset style="width: 50%" a>
+                <legend align="center">
+                    注册信息
+                </legend>
+
+                <lable>账号</lable>
+                <input type="text" pattern="^[a-zA-Z0-9]{5,}$" required="required">
+                <span>(由英文字母和数字组成，至少5个字符)</span>
+                <br><br>
+                <lable>密码</lable>
+                <input type="password" pattern="^[a-zA-Z0-9]{5,}$" required="required">
+                <span>(由英文字母和数字组成，至少5个字符)</span>
+                <br><br>
+                <label>邮箱</label>
+                <input type="email" required="required">
+                <span style="font-size: 13px">(用于找回密码)</span>
+            </fieldset>
+
+            <fieldset style="width: 50%">
+                <legend align="center">
+                    选填信息
+                </legend>
+
+                使用接触过日本音乐 <br>
+                是<input type="radio" name="select1">
+                否<input type="radio" name="select1">
+
+                <br>
+                <label>喜欢的歌手和乐队</label>
+                <input type="text">
+                <br>
+
+                <label>喜欢的音乐风格  &nbsp&nbsp&nbsp</label>
+                <select name="musicStyle">
+                    <option>流行</option>
+                    <option>摇滚</option>
+                    <option>电子</option>
+                    <option>轻音乐</option>
+                    <option>传统</option>
+                    <option>其他</option>
+                </select>
+
+            </fieldset>
+
+            <input type="submit" value="提交">
+        </form>
+    </div>
+</body>
+</html>
